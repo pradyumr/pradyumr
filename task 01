@@ -1,0 +1,25 @@
+def Caesar_cipher(text, shift) :
+    result=""
+    for char in text:
+        if char.isalpha() :
+        base = 'A' if 
+char.isupper() else 'a'
+               result +=char((ord(char) 
+-ord(base) + shift)%26 +
+ord(base)) 
+        else:
+           result+= char 
+    return result 
+print ("Caesar cipher program ") 
+while true:
+      option = input("Encrpt (e), 
+ decrypt (d), or Quit (q) : ") 
+        if option == 'q' :
+            break
+ text = input("Enter message: ") 
+ shift = int(input("Enter shift:
+")) 
+   if option == 'd':
+      shift = -shift
+  print(" Result:", 
+Caesar_cipher(text, shift) ) 
