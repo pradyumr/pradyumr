@@ -1,0 +1,15 @@
+def
+check_passward_strength(password):
+    length = len(passward) >= 8
+    upper = any(char.isupper() for
+ char in passward) 
+    lower = any(char.islowe() for
+char in passward) 
+    digit = any(char.isdigit() for
+char in passward) 
+   special = any(char in
+"! @#$%^€*()-+" for char in passward) 
+    strength = sum([length, upper, lower, digit, special]) 
+   retrun "weak" if strength <= 2 
+else "Medium " if strength == 3
+else "strong"
