@@ -4,7 +4,7 @@
 def Enc_image(image_path):
     img = Image. open(image_path) 
     img_array = np.array(img) +10
-#Add 10 to each pixel
+
 
 Image.fromarray(np.clip(img_array, 
 0,
@@ -14,7 +14,7 @@ def Dec_image() :
     img = 
 Image.open("encrypted_image.png") 
     img_array = np.array(img) - 10
-#subtract 10 to get the original
+
 
 Image.fromarray(np.clip(img_array, 
 0,
